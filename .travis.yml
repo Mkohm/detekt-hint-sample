@@ -9,4 +9,4 @@ script:
   - ./gradlew assemble
   - gem install bundler
   - bundle install
-  - bundle exec danger
+  - bundle exec danger --verbose # Verbose is useful for debugging when setting up

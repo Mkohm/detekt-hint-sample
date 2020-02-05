@@ -10,6 +10,7 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    detektPlugins "io.github.mkohm:detekt-hint:0.0.5"
 }
 
 compileKotlin {
@@ -19,28 +20,7 @@ compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
 
+// Detekt task configuration. Run the detektMain task to include detekt-hint rules. (This is because detekt-hint is using an experimental feature of detekt that includes type resolution.)
 detekt {
     config = files("$projectDir/config/detekt.yml") // point to your custom config defining rules to run, overwriting default behavior
-
-    reports {
-        html {
-            enabled = true
-            destination = file("build/reports/detekt/detekt.html")
-        }
-
-        xml {
-            enabled = true
-            destination = file("build/reports/detekt/detekt-checkstyle.xml")
-        }
-
-        txt {
-            enabled = true
-            destination = file("build/reports/detekt/detekt.txt")
-        }
-    }
-}
-
-// The detekt-hint extension is a dependency of detekt. Running the detekt task will now include the rules in the extension.
-dependencies {
-    detektPlugins "io.github.mkohm:detekt-hint:0.0.5"
 }

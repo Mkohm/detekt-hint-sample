@@ -1,7 +1,7 @@
 # detekt-hint-sample
 An example of how to configure detekt-hint in a Kotlin environment. This repository includes setup of Detekt and the detekt-hint plugin, the Gemfile and the Dangerfile for using Danger and a configuration file for using Travis CI.
 
-What remains of configuration is:
+What remains of configuration if you clone this repository:
 
 1. [Create a bot user in Github](https://danger.systems/guides/getting_started.html#creating-a-bot-account-for-danger-to-use)
 

@@ -10,7 +10,7 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    detektPlugins "io.github.mkohm:detekt-hint:0.0.5"
+    detektPlugins "io.github.mkohm:detekt-hint:0.1.4"
 }
 
 compileKotlin {

@@ -26,7 +26,6 @@ class Draw {
     }
 }
 
-
 object ShapeProvider {
     fun getShapes(): List<Shape> {
         return listOf(Rectangle(10), Circle(5), Circle(5))

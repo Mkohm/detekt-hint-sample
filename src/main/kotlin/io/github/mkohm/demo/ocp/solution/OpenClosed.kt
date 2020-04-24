@@ -16,7 +16,6 @@ class Circle(private val diameter: Int) : Shape {
     }
 }
 
-
 class Draw {
     fun drawAllShapes() {
         val shapes = ShapeProvider.getShapes()

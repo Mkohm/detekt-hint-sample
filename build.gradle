@@ -22,7 +22,7 @@ compileTestKotlin {
 
 // Detekt task configuration. Run the detektMain task to include detekt-hint rules. (This is because detekt-hint is using an experimental feature of detekt that includes type resolution.)
 detekt {
-    config = files("$projectDir/config/detekt.yml") // point to your custom config defining rules to run, overwriting default behavior
+    config = files("$projectDir/config/detekt-hint-config.yml") // point to your custom config defining rules to run, overwriting default behavior
 
     reports {
         html {

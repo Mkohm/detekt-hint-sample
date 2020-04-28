@@ -1,6 +1,5 @@
 package io.github.mkohm.demo.UseCompositionInsteadOfInheritance
 
-
 open class Rectangle(width: Int, height: Int) {
     private var width = 0
     private var height = 0

@@ -1,6 +1,3 @@
-build:
-  maxIssues: 0
-
 detekt-hint:
   UseCompositionInsteadOfInheritance:
     active: true
@@ -12,8 +9,3 @@ detekt-hint:
       active: true
   OpenClosedPrinciple:
       active: true
-
-
-
-
-
